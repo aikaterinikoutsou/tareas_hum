@@ -5,6 +5,8 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def index
     @tasks = Task.all
+
+    @num = Task.count
   end
 
   # GET /tasks/1
